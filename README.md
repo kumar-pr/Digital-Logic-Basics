@@ -23,3 +23,8 @@ The following waveform verifies the truth table functionality for all logic gate
 
 
 ---
+
+## Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation:
+
+![Logic Gates Schematic](all_gates_schematic.png)
