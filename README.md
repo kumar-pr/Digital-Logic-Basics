@@ -28,3 +28,20 @@ The following waveform verifies the truth table functionality for all logic gate
 The following circuit diagram shows the synthesized hardware implementation:
 
 ![Logic Gates Schematic](all_gates_schematic.png)
+
+
+---
+
+## 2. 2:1 Multiplexer
+This module selects between two 4-bit input buses based on a single select line.
+
+### Simulation Results
+The following waveform verifies that the output correctly switches between input `i0` and `i1` based on the select line `s0`.
+
+![2:1 MUX Waveform](mux2_1_waveform.png)
+
+**Waveform Legend:**
+* **s0**: Select Line (0 selects 'i0', 1 selects 'i1')
+* **i0**: Input Bus 0 (Value: 0)
+* **i1**: Input Bus 1 (Value: 1)
+* **y**: Output Bus
