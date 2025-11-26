@@ -5,7 +5,7 @@ Synthesizable digital logic components designed in Vivado.
 
 ## 1. Basic Logic Gates
 
-## Simulation Results
+### Simulation Results
 
 The following waveform verifies the truth table functionality for all logic gates:
 
@@ -24,7 +24,7 @@ The following waveform verifies the truth table functionality for all logic gate
 
 ---
 
-## Synthesis (RTL Schematic)
+### Synthesis (RTL Schematic)
 The following circuit diagram shows the synthesized hardware implementation:
 
 ![Logic Gates Schematic](all_gates_schematic.png)
@@ -45,3 +45,15 @@ The following waveform verifies that the output correctly switches between input
 * **i0**: Input Bus 0 (Value: 0)
 * **i1**: Input Bus 1 (Value: 1)
 * **y**: Output Bus
+
+---
+
+
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation, confirming 4-bit data paths and multiplexing logic:
+
+![2:1 MUX Schematic](mux2_1_schematic.png)
+
+
+---
+
