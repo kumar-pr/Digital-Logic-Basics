@@ -57,3 +57,23 @@ The following circuit diagram shows the synthesized hardware implementation, con
 
 ---
 
+
+
+## 3. 4:1 Multiplexer
+This module selects between four 3-bit input buses based on a 2-bit select line.
+
+### Simulation Results
+The following waveform verifies the selection logic across all four channels:
+
+![4:1 MUX Waveform](mux4_1_waveform.png)
+
+**Waveform Legend:**
+* **s1, s0**: Select Lines (00->i0, 01->i1, 10->i2, 11->i3)
+* **i0 - i3**: 3-bit Input Data Buses
+* **y**: Output Bus
+
+
+
+
+
+
