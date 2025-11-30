@@ -73,6 +73,41 @@ The following waveform verifies the selection logic across all four channels:
 * **y**: Output Bus
 
 
+---
+
+
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation, confirming the 4:1 multiplexing logic and 3-bit data paths:
+
+![4:1 MUX Schematic](mux4_1_schematic.png)
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
