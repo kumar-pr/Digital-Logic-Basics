@@ -9,7 +9,7 @@ Synthesizable digital logic components designed in Vivado.
 
 The following waveform verifies the truth table functionality for all logic gates:
 
-![Logic Gates Waveform](all_gates_waveform.png)
+![Logic Gates Waveform](01_Basic_Gates/all_gates_waveform.png)
 
 **Waveform Legend:**
 * **a, b**: Inputs
@@ -27,8 +27,7 @@ The following waveform verifies the truth table functionality for all logic gate
 ### Synthesis (RTL Schematic)
 The following circuit diagram shows the synthesized hardware implementation:
 
-![Logic Gates Schematic](all_gates_schematic.png)
-
+![Logic Gates Schematic](01_Basic_Gates/all_gates_schematic.png)
 
 ---
 
@@ -38,7 +37,7 @@ This module selects between two 4-bit input buses based on a single select line.
 ### Simulation Results
 The following waveform verifies that the output correctly switches between input `i0` and `i1` based on the select line `s0`.
 
-![2:1 MUX Waveform](mux2_1_waveform.png)
+![2:1 MUX Waveform](02_Mux_2_1/mux2_1_waveform.png)
 
 **Waveform Legend:**
 * **s0**: Select Line (0 selects 'i0', 1 selects 'i1')
@@ -52,8 +51,7 @@ The following waveform verifies that the output correctly switches between input
 ### Synthesis (RTL Schematic)
 The following circuit diagram shows the synthesized hardware implementation, confirming 4-bit data paths and multiplexing logic:
 
-![2:1 MUX Schematic](mux2_1_schematic.png)
-
+![2:1 MUX Schematic](02_Mux_2_1/mux2_1_schematic.png)
 
 ---
 
@@ -65,7 +63,7 @@ This module selects between four 3-bit input buses based on a 2-bit select line.
 ### Simulation Results
 The following waveform verifies the selection logic across all four channels:
 
-![4:1 MUX Waveform](mux4_1_waveform.png)
+![4:1 MUX Waveform](03_Mux_4_1/mux4_1_waveform.png)
 
 **Waveform Legend:**
 * **s1, s0**: Select Lines (00->i0, 01->i1, 10->i2, 11->i3)
@@ -79,8 +77,7 @@ The following waveform verifies the selection logic across all four channels:
 ### Synthesis (RTL Schematic)
 The following circuit diagram shows the synthesized hardware implementation, confirming the 4:1 multiplexing logic and 3-bit data paths:
 
-![4:1 MUX Schematic](mux4_1_schematic.png)
-
+![4:1 MUX Schematic](03_Mux_4_1/mux4_1_schematic.png)
 
 ---
 
