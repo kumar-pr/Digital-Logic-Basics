@@ -82,7 +82,18 @@ The following circuit diagram shows the synthesized hardware implementation, con
 ---
 
 
+## 4. 1:4 Demultiplexer
+This module routes a single 3-bit input bus to one of four output buses based on a 2-bit select line.
 
+### Simulation Results
+The following waveform demonstrates the input data (Value: 5) being routed to outputs y0 through y3 sequentially:
+
+![1:4 DEMUX Waveform](04_Demux_1_4/demux1_4_waveform.png)
+
+**Waveform Legend:**
+* **i**: Input Data Bus (Fixed at value 5)
+* **s1, s0**: Select Lines
+* **y0 - y3**: Output Buses
 
 
 
