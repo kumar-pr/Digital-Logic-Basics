@@ -95,11 +95,14 @@ The following waveform demonstrates the input data (Value: 5) being routed to ou
 * **s1, s0**: Select Lines
 * **y0 - y3**: Output Buses
 
+---
 
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation, confirming the 1-to-4 data routing logic:
 
+![1:4 DEMUX Schematic](04_Demux_1_4/demux1_4_schematic.png)
 
-
-
+---
 
 
 
