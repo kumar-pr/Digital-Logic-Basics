@@ -105,9 +105,20 @@ The following circuit diagram shows the synthesized hardware implementation, con
 ---
 
 
+## 5. D Flip-Flop (Async Reset, Sync Enable)
+This module implements a standard D Flip-Flop with an active-high asynchronous reset and a synchronous enable signal.
 
+### Simulation Results
+The following waveform demonstrates synchronous loading (when en=1), state holding (when en=0), and asynchronous reset priority:
 
+![D Flip-Flop Waveform](05_D_Flip_Flop/d_ff_waveform.png)
 
+**Waveform Legend:**
+* **clk**: Clock Signal (100 MHz)
+* **reset**: Asynchronous Reset (Active High)
+* **en**: Enable Signal
+* **d**: Data Input
+* **q**: Data Output
 
 
 
