@@ -120,9 +120,12 @@ The following waveform demonstrates synchronous loading (when en=1), state holdi
 * **d**: Data Input
 * **q**: Data Output
 
+---
 
+### Synthesis (RTL Schematic)
+The following circuit diagram confirms the synthesis of a D-Flip Flop with dedicated Clock Enable (CE) and Asynchronous Clear (CLR) pins:
 
-
+![D Flip-Flop Schematic](05_D_Flip_Flop/d_ff_schematic.png)
 
 
 
