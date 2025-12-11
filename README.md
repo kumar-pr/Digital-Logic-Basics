@@ -128,8 +128,27 @@ The following circuit diagram confirms the synthesis of a D-Flip Flop with dedic
 ![D Flip-Flop Schematic](05_D_Flip_Flop/d_ff_schematic.png)
 
 
+---
+
+## 6. D-Latch (Async Reset, Level-Sensitive Enable)
+
+This module implements a transparent D-Latch with an active-high asynchronous reset and a level-sensitive enable signal.
+
+### Simulation Results
+
+The following waveform validates the circuit's operation. It demonstrates the transparency phase (when en=1), state retention (when en=0), and the immediate priority of the asynchronous reset:
+
+![D-Latch Waveform](06_D_Latch/D_Latch_waveform.png)
+
+**Waveform Legend:**
+
+* **reset**: Asynchronous Reset (Active High)
+* **en**: Enable Signal (Level Sensitive)
+* **d**: Data Input
+* **q**: Data Output
 
 
+---
 
 
 
