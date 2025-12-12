@@ -152,6 +152,10 @@ The following waveform validates the circuit's operation. It demonstrates the tr
 
 
 
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation, confirming the basic latch structure with the asynchronous reset path:
+
+![D-Latch Schematic](06_D_Latch/d_latch_schematic.png)
 
 
 
