@@ -159,4 +159,20 @@ The following circuit diagram shows the synthesized hardware implementation, con
 
 
 
+---
+
+## 7. 8:3 One-Hot Encoder
+This module encodes an 8-bit one-hot input vector into a 3-bit binary output. It utilizes a `case` statement with a default clause to prevent unintentional latch inference during synthesis.
+
+### Simulation Results
+The following waveform confirms the correct binary encoding for each active-high bit position in the input vector:
+
+![Encoder Waveform](07_Encoder_8_3/encoder8_3_waveform.png)
+
+**Waveform Legend:**
+* **a**: 8-bit One-Hot Input
+* **y**: 3-bit Binary Output
+
+
+
 
