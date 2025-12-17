@@ -174,5 +174,11 @@ The following waveform confirms the correct binary encoding for each active-high
 * **y**: 3-bit Binary Output
 
 
+---
+
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation. The tool inferred a Read-Only Memory (RTL_ROM) structure to implement the look-up table logic, confirming a purely combinational design:
+
+![Encoder Schematic](07_Encoder_8_3/encoder8_3_schematic.png)
 
 
