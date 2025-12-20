@@ -182,3 +182,17 @@ The following circuit diagram shows the synthesized hardware implementation. The
 ![Encoder Schematic](07_Encoder_8_3/encoder8_3_schematic.png)
 
 
+---
+
+## 8. 8:3 Priority Encoder
+This module implements a priority encoder using the `casex` statement. It converts an 8-bit input into a 3-bit binary output, assigning priority to the highest-order active bit (Bit 7 has highest priority).
+
+### Simulation Results
+The following waveform verifies the priority logic. Note the final test case where inputs `00000011` result in output `1`, confirming that Bit 1 takes priority over Bit 0:
+
+![Priority Encoder Waveform](08_Priority_Encoder/encoder_prio_waveform.png)
+
+**Waveform Legend:**
+* **a**: 8-bit Input Vector
+* **y**: 3-bit Output (Index of highest active bit)
+
