@@ -196,3 +196,9 @@ The following waveform verifies the priority logic. Note the final test case whe
 * **a**: 8-bit Input Vector
 * **y**: 3-bit Output (Index of highest active bit)
 
+---
+
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation. The tool inferred an `RTL_ROM` structure to efficiently map the priority logic truth table, confirming a combinational design without accidental latches:
+
+![Priority Encoder Schematic](08_Priority_Encoder/encoder_prio_schematic.png)
