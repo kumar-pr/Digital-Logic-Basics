@@ -202,3 +202,41 @@ The following waveform verifies the priority logic. Note the final test case whe
 The following circuit diagram shows the synthesized hardware implementation. The tool inferred an `RTL_ROM` structure to efficiently map the priority logic truth table, confirming a combinational design without accidental latches:
 
 ![Priority Encoder Schematic](08_Priority_Encoder/encoder_prio_schematic.png)
+
+---
+
+
+
+
+## 9. 4-Bit Synchronous Counter
+This module implements a synchronous decade (Mod-10) counter. It is designed to count from 0 to 9 and wrap around, with directional control and asynchronous reset capabilities.
+
+### Simulation Results
+The following waveform validates the correct timing and logic of the synchronous counter. It demonstrates the asynchronous reset functionality (0-20ns), the standard up-counting sequence wrapping cleanly from 9 to 0, and the immediate switch to down-counting logic upon the `updown` signal transition at the 200ns mark:
+
+![Synchronous Counter Waveform](09_Synchronous_Counter/syn_counter_waveform.png)
+
+**Waveform Legend:**
+* **clk**: System Clock
+* **reset**: Asynchronous Reset (Active High)
+* **updown**: Direction Control (0 = Up, 1 = Down)
+* **y**: 4-bit Output Count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
