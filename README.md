@@ -220,7 +220,7 @@ The following waveform validates the correct timing and logic of the synchronous
 * **clk**: System Clock
 * **reset**: Asynchronous Reset (Active High)
 * **updown**: Direction Control (0 = Up, 1 = Down)
-* **y**: 4-bit Output Count
+* **y**: 4-bit Output Count 
 
 
 ---
