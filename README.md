@@ -228,7 +228,7 @@ The following waveform validates the correct timing and logic of the synchronous
 ### Synthesis (RTL Schematic)
 The following circuit diagram confirms the design architecture, utilizing separate `RTL_ADD` and `RTL_SUB` units for bidirectional counting. It features `RTL_MUX` logic to handle the Mod-10 wrap-around conditions and feeds into a 4-bit asynchronous register bank:
 
-![Synchronous Counter Schematic](09_Synchronous_Counter/syn_counter_schematic.png)
+![Synchronous Counter Schematic](09_Synchronous_Counter/syn_counter_schematic.png) 
 
 
 
