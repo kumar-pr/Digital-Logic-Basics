@@ -231,10 +231,22 @@ The following circuit diagram confirms the design architecture, utilizing separa
 ![Synchronous Counter Schematic](09_Synchronous_Counter/syn_counter_schematic.png) 
 
 
+---
 
 
+### 10. Mealy 101 Sequence Detector
+This module implements a Mealy Finite State Machine (FSM) to detect the pattern '101' in a serial bit stream. As a Mealy machine, the output depends on both the current state and the current input, allowing for immediate detection.
 
+### Simulation Results
+The following waveform validates the FSM logic. It demonstrates that the output `y` goes high immediately when the input `x` completes the '101' sequence (Logic 1 at State S2), verifying the non-overlapping detection logic:
 
+![Mealy 101 Waveform](10_Mealy_Sequence_Detector/mealy_101_waveform.png)
+
+**Waveform Legend:**
+* **clk**: System Clock
+* **reset**: Asynchronous Reset (Active High)
+* **x**: Serial Input Stream
+* **y**: Output Flag (High when '101' is detected)
 
 
 
