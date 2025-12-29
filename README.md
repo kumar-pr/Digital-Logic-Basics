@@ -249,7 +249,12 @@ The following waveform validates the FSM logic. It demonstrates that the output 
 * **y**: Output Flag (High when '101' is detected)
 
 
+---
 
+### Synthesis (RTL Schematic)
+The following circuit diagram confirms the synthesized hardware implementation. The tool correctly extracted the FSM logic, implementing the three states (s0, s1, s2) using state registers and generating the Mealy output logic directly from the current state and input:
+
+![Mealy 101 Schematic](10_Mealy_Sequence_Detector/mealy_101_schematic.png)
 
 
 
