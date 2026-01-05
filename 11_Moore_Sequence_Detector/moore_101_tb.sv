@@ -4,49 +4,45 @@ module moore_101_tb;
     logic x;
     logic y;
 
-     
     moore_101 dut (
-        .clk(clk),
-        .reset(reset),
-        .x(x),
+        .clk(clk), 
+        .reset(reset), 
+        .x(x), 
         .y(y)
     );
 
-    
-    initial clk = 0;
     always #5 clk = ~clk;
 
     initial begin
-         
+        clk = 0;
         reset = 1;
         x = 0;
-        #15 reset = 0;  
+        
+        #10 reset = 0;
 
-         
-        
-        @(negedge clk) x = 1; // FSM will move S0 -> S1 on next rising edge
-        @(negedge clk) x = 0; // FSM will move S1 -> S2 on next rising edge
-        @(negedge clk) x = 1; // FSM will move S2 -> S3 on next rising edge
+        // Sequence 1: 1-0-1 (Success)
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 1;  // Reaches s3 here
 
-         
-        @(negedge clk) x = 0; 
+        // Sequence 2: 0-1-0-1 (Success)
+        #20 x = 0;
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 1;  // Reaches s3 here
 
-        
-        repeat (2) @(negedge clk); 
-        @(negedge clk) x = 1;
-        @(negedge clk) x = 0;
-        @(negedge clk) x = 1;
-        
-        @(negedge clk) x = 0;
-        
-        #50;
-        $display("Simulation Finished");
-        $finish;
+        // Sequence 3: 1-0-1 (Success)
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 1;  // Reaches s3 here
+
+        #50 $finish;
     end
 
-    
+    // Monitor Output
     initial begin
-        $monitor("Time=%0t | Reset=%b | x=%b | y=%b | State=%b", $time, reset, x, y, dut.state);
+        $display("time\tclk\tx\ty");
+        $monitor("%0t\t%b\t%b\t%b", $time, clk, x, y);
     end
 
 endmodule
