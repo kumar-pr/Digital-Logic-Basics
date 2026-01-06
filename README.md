@@ -257,8 +257,20 @@ The following circuit diagram confirms the synthesized hardware implementation. 
 ![Mealy 101 Schematic](10_Mealy_Sequence_Detector/mealy_101_schematic.png)
 
 
+---
+## 11. Moore 101 Sequence Detector
+This module implements a Moore Finite State Machine (FSM) to detect the non-overlapping '101' pattern. In a Moore machine, the output depends **only** on the current state, not the immediate input.
 
+### Simulation Results
+The waveform below verifies the design. Notice that unlike the Mealy machine, the output `y` goes high **one clock cycle after** the sequence '101' is detected (when the state actually transitions to s3):
 
+![Moore 101 Waveform](11_Moore_Sequence_Detector/moore_101_waveform.png)
+
+**Waveform Legend:**
+* **clk**: System Clock
+* **reset**: Asynchronous Reset
+* **x**: Serial Input Stream
+* **y**: Output Flag (High at state s3)
 
 
 
