@@ -300,8 +300,10 @@ The following waveform verifies the synchronous read operation over the full add
 ---
 
 
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation. The tool inferred a multiplexer-based structure (`RTL_MUX`) to map the address inputs to the hardcoded data constants, which are then registered by `RTL_REG` to ensure synchronous output:
 
-
+![ROM Schematic](12_ROM/rom_schematic.png)
 
 
 
