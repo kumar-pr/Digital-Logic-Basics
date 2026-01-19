@@ -306,9 +306,23 @@ The following circuit diagram shows the synthesized hardware implementation. The
 ![ROM Schematic](12_ROM/rom_schematic.png)
 
 
+---
 
+## 13. Distributed RAM (Single-Port)
+This module implements a parameterized Single-Port RAM (Random Access Memory). It uses synchronous write logic and asynchronous read logic, allowing the synthesizer to implement it efficiently using **Distributed RAM (LUTRAM)** resources on the FPGA.
 
+### Simulation Results
+The following waveform verifies the memory operations. It demonstrates writing three distinct values to specific addresses and successfully retrieving them. Note that the final read at address 0 returns "X" (undefined), confirming that unwritten memory locations remain uninitialized:
 
+![RAM Waveform](13_RAM/ram_waveform.png)
+
+**Waveform Legend:**
+* **we**: Write Enable (High = Write, Low = Read)
+* **adr**: Address Pointer (Tested at 5, 10, 63)
+* **din/dout**: 32-bit Data I/O
+    * Adr 5 -> `2863315899` (0xAAAA_BBBB)
+    * Adr 10 -> `305419896` (0x1234_5678)
+    * Adr 63 -> `3735928559` (0xDEAD_BEEF)
 
 
 
