@@ -325,10 +325,13 @@ The following waveform verifies the memory operations. It demonstrates writing t
     * Adr 63 -> `3735928559` (0xDEAD_BEEF)
 
 
+---
 
 
+### Synthesis (RTL Schematic)
+The following circuit diagram shows the synthesized hardware implementation. The tool correctly inferred an `RTL_RAM` block where the read address (`RA1`) and write address (`WA1`) share the same input port, confirming a Single-Port RAM architecture:
 
-
+![RAM Schematic](13_RAM/ram_schematic.png)
 
 
 
